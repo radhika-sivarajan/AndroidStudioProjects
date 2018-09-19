@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
         EditText getTheAmount = (EditText) findViewById(R.id.getAmount);
         Double dollarAmountDouble = Double.parseDouble(getTheAmount.getText().toString());
         Double poundAmount = dollarAmountDouble * 0.76;
-        Toast.makeText(this, "£" + poundAmount.toString(), Toast.LENGTH_SHORT).show();
+
+//        Toast.makeText(this, "£" + poundAmount.toString(), Toast.LENGTH_SHORT).show();
+        
+//        With 2 decimal palces
+        Toast.makeText(this, "£" + String.format("%.2f",poundAmount), Toast.LENGTH_SHORT).show();
 
         Log.i("Test","It works");
     }
