@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     public void buttonClick(View view){
+
+        Toast.makeText(this, "Hi there", Toast.LENGTH_LONG).show();
 
         EditText getTheName = (EditText) findViewById(R.id.getName);
         EditText getThePassword = (EditText) findViewById(R.id.getPassword);
