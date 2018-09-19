@@ -4,20 +4,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void buttonClick(View view){
+    public void newCat(View view){
 
-        Toast.makeText(this, "Hi there", Toast.LENGTH_LONG).show();
+//        Button lick image change (Get image id change resource)
+        ImageView getCatImage = (ImageView) findViewById(R.id.catImageView);
+        getCatImage.setImageResource(R.drawable.cat2);
 
-        EditText getTheName = (EditText) findViewById(R.id.getName);
-        EditText getThePassword = (EditText) findViewById(R.id.getPassword);
+        Log.i("Test","It works....");
 
-        Log.i("User name", getTheName.getText().toString());
-        Log.i("Password", getThePassword.getText().toString());
     }
 
     @Override
