@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void convertFunction(View view){
 
+//        Get the amount, convert to double, multiply with current convertion rate and display
         EditText getTheAmount = (EditText) findViewById(R.id.getAmount);
         Double dollarAmountDouble = Double.parseDouble(getTheAmount.getText().toString());
         Double poundAmount = dollarAmountDouble * 0.76;
