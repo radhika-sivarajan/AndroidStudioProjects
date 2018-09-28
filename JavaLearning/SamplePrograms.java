@@ -1,19 +1,24 @@
-public class Variables {
-  public static void main(String[] args) {
-	int age =34;
-	double favNo = 3.3;
-	boolean loggedIn = true;
-	String myName = "Radhika";
+import java.util.*;
+
+public class ArrayMaps{
+	public static void main(String[] args){
 	
-	// length Method
-	System.out.println("My name is "+ myName + ", it have " + myName.length() 
-	+ " charactors. My favorite number is "+ favNo);
-  }
+		// Primitive array
+		int[] primeNumbers = {2,3,5,7,11,13};
+		
+		System.out.println(primeNumbers.length);
+		
+		// List array
+		List list = new ArrayList();
+		list.add(2);
+		list.add(3);
+
+		System.out.println(list.get(1)); // Get a specific list item
+		System.out.println(list.size()); // Get size of list
+		System.out.println(list.toString()); // Display whole list
+	}
 }
 
-  
-  
-  
-  
-  
-  
+
+
+
