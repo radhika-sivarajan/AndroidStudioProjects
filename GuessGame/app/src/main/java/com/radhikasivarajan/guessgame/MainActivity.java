@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
 
     int randomNumber;
 
+    public void makeToast(String string){
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
+    }
+
     public void guessNumberFunction(View view){
 
         // Get the guess number and convert to int
@@ -21,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Check the guessed number is same as random gen number
         if (guessInt > randomNumber){
-            Toast.makeText(this, "Lower! ", Toast.LENGTH_SHORT).show();
+            makeToast("Lower!");
         } else if (guessInt < randomNumber){
-            Toast.makeText(this, "Higher! ", Toast.LENGTH_SHORT).show();
+            makeToast("Higher!");
         } else {
-            Toast.makeText(this, "Congrats! The number is " + randomNumber, Toast.LENGTH_SHORT).show();
+            makeToast("Congrats! The number is " + randomNumber);
 
             // If the guess is correct, gen next number
             Random rand = new Random();
