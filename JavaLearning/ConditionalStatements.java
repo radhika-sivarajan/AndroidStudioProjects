@@ -44,8 +44,17 @@ public class ConditionalStatements {
 			System.out.println(triangularNumber);
 			j++;
 			triangularNumber = triangularNumber + j;
+        }
+        
+        // For loop, List array
+        List<String> familyMembers = new ArrayList<String>();
+		familyMembers.add("Albert");
+		familyMembers.add("John");
+		familyMembers.add("Sandy");
+		familyMembers.add("Anna");
+		for(String name:familyMembers){
+			System.out.println(name);
 		}
-
     }
 }
   
