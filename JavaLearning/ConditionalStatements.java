@@ -22,10 +22,11 @@ public class ConditionalStatements {
             System.out.println("Second number is big");
         }	
 
-        // While loop
+        // While loop, even numbers
         int x = 1;
-		while(x <= 10){
-			System.out.println("The value of x is " + x);
+		System.out.println("The even number between 1 to 10");
+		while(x <= 5){
+			System.out.println(2 * x);
 			x++;
 		}
     }
