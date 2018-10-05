@@ -28,7 +28,24 @@ public class ConditionalStatements {
 		while(x <= 5){
 			System.out.println(2 * x);
 			x++;
+        }
+
+        // For loop, Triangular number
+        System.out.println("Triangular number upto 5");
+		for(int i=1; i<=5; i++){
+			int n = i*(i+1)/2;		
+			System.out.println( n );
+        }
+        
+        // While loop, Triangular number
+        int j = 1;
+		int triangularNumber = 1;
+		while(j<=5){
+			System.out.println(triangularNumber);
+			j++;
+			triangularNumber = triangularNumber + j;
 		}
+
     }
 }
   
