@@ -21,6 +21,13 @@ public class ConditionalStatements {
         } else {
             System.out.println("Second number is big");
         }	
+
+        // While loop
+        int x = 1;
+		while(x <= 10){
+			System.out.println("The value of x is " + x);
+			x++;
+		}
     }
 }
   
