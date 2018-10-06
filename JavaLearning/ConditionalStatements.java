@@ -1,17 +1,7 @@
 public class ConditionalStatements {
     public static void main(String[] args) {
-    
-        // If statemnet
-        int age = 18;
-        if (age == 18){
-            System.out.println("User is 18");
-        } else if (age >= 18){
-            System.out.println("User is over 18");
-        } else {
-            System.out.println("User is under 18");
-        }
         
-        // Number checking
+        // If statemnet, Number checking
         int[] num = {8,5}; 
         
         if (num[0] == num[1]){
