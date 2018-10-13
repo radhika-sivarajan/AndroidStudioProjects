@@ -19,7 +19,6 @@ public class ArrayMaps{
 	
 		// Maps
 		Map relation = new HashMap();
-		
 		relation.put("Father","Ronald");
 		relation.put("Mother","Nancy");
 		System.out.println("The father is " + relation.get("Father")); // Get father's name
