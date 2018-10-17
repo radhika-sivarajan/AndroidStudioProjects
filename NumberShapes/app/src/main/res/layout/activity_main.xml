@@ -38,5 +38,6 @@
         android:id="@+id/getNumber"
         android:hint="Enter number"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 </RelativeLayout>
