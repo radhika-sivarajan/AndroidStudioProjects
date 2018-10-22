@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="checkNumber" />
 
     <TextView
         android:text="Enter the number below to check whether it is a Triangular, Square or Not"
@@ -36,7 +37,7 @@
         android:ems="10"
         android:layout_marginTop="51dp"
         android:id="@+id/getNumber"
-        android:hint="Enter number"
+        android:hint="Enter number here"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:textAlignment="center" />
