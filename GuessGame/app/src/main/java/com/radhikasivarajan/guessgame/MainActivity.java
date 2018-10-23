@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     int randomNumber;
 
+    // Methos to display toast
     public void makeToast(String string){
         Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
     }
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Gen random number when app launch
+        // Gen random number when app launched
         Random rand = new Random();
         randomNumber = rand.nextInt(20) + 1;
     }
