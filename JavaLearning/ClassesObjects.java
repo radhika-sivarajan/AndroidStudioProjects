@@ -10,6 +10,7 @@ public class ClassesObjects {
                 }
             }
         } 
+        
         User bob = new User(); //New instance
         bob.score = 1000;
         System.out.println("The user WON : " + bob.hasWon());
