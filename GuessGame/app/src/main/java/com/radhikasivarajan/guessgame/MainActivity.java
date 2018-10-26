@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void guessNumberFunction(View view){
 
-        // Get the guess number and convert to int
+        // Get the guessed number and convert to int
         EditText getTheNumber = (EditText) findViewById(R.id.getNumber);
         int guessInt = Integer.parseInt(getTheNumber.getText().toString());
 
-        // Check the guessed number is same as random gen number
+        // Check the guessed number is same as the random gen number
         if (guessInt > randomNumber){
             makeToast("Lower!");
         } else if (guessInt < randomNumber){
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             makeToast("Congrats! The number is " + randomNumber);
 
-            // If the guess is correct, gen next number
+            // If the guess is correct, generate next number
             Random rand = new Random();
             randomNumber = rand.nextInt(20) + 1;
         }
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Gen random number when app launched
+        // Get random number when the app is launched
         Random rand = new Random();
         randomNumber = rand.nextInt(20) + 1;
     }
