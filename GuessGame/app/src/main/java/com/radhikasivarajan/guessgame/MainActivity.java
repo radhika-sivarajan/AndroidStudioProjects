@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     int randomNumber;
 
-    // Methos to display toast
+    // Method to display toast
     public void makeToast(String string){
         Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
     }
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EditText getTheNumber = (EditText) findViewById(R.id.getNumber);
         int guessInt = Integer.parseInt(getTheNumber.getText().toString());
 
-        // Check the guessed number is same as the random gen number
+        // Check the guessed number is same as the random generated number
         if (guessInt > randomNumber){
             makeToast("Lower!");
         } else if (guessInt < randomNumber){
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             Random rand = new Random();
             randomNumber = rand.nextInt(20) + 1;
         }
-
     }
 
     @Override
